@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Your App</title>
+  </head>
+  <body>
+    <div id="app">
+      <h2>Data Table</h2>
+      <button onclick="openAddForm()">Add New</button>
+
+      <div id="addForm" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeAddForm()">&times;</span>
+          <label>Name:</label>
+          <input type="text" id="nameInput" />
+          <input type="text" id="idInput" style="display:none" />
+    
+          <label>Phone Number:</label>
+          <input type="text" id="phoneNumberInput" />
+
+          <label>Email:</label>
+          <input type="text" id="emailInput" />
+
+          <label>Hobbies:</label>
+          <input type="text" id="hobbiesInput" />
+
+          <button onclick="saveFormData()">Save</button>
+        </div>
+      </div>
+    </div>
+    <div id="table-container">
+
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
